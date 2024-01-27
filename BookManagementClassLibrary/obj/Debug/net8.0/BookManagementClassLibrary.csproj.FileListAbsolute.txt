@@ -1,0 +1,15 @@
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\bin\Debug\net8.0\BookManagementClassLibrary.deps.json
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\bin\Debug\net8.0\BookManagementClassLibrary.runtimeconfig.json
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\bin\Debug\net8.0\BookManagementClassLibrary.dll
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\bin\Debug\net8.0\BookManagementClassLibrary.pdb
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.AssemblyInfo.cs
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.sourcelink.json
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.dll
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\refint\BookManagementClassLibrary.dll
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.pdb
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\BookManagementClassLibrary.genruntimeconfig.cache
+C:\Users\DELL\source\repos\BookManagementSystem\BookManagementClassLibrary\obj\Debug\net8.0\ref\BookManagementClassLibrary.dll
