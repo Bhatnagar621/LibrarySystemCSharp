@@ -89,7 +89,7 @@ namespace ConsoleBookApplication
             user.Add(newUser);
 
             Console.WriteLine("Account created successfully!");
-            Menu.DisplayMenu(newUser);
+            Menu.DisplayMenu(user.Get(newUser));
         }
     }
 }
