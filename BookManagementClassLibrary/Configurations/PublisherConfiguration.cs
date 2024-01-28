@@ -12,6 +12,7 @@ namespace BookManagementClassLibrary.Configurations
             builder.Property("Website").HasMaxLength(500);
             builder.HasMany(p => p.Books).WithOne(p => p.Publisher)
                 .HasForeignKey(p => p.PublisherId);
+            builder.HasIndex(["Id", "IsDeleted"]);
         }
     }
 }

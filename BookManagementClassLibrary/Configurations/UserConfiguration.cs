@@ -13,6 +13,7 @@ namespace BookManagementClassLibrary.Configurations
             builder.Property("Email").HasMaxLength(500);
             builder.Property("Password").HasMaxLength(100);
             builder.HasIndex("Email").IsUnique();
+            builder.HasIndex(["Id", "IsDeleted"]);
         }
     }
 }

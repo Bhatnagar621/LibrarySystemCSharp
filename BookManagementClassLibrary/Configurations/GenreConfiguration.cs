@@ -11,6 +11,7 @@ namespace BookManagementClassLibrary.Configurations
             builder.Property("Name").HasMaxLength(100).IsRequired();
             builder.Property("Description").HasMaxLength(500);
             builder.HasMany(g => g.Books).WithOne(b => b.Genre);
+            builder.HasIndex(["Id", "IsDeleted"]);
         }
     }
 }

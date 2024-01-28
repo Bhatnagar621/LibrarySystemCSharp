@@ -11,6 +11,7 @@ namespace BookManagementClassLibrary.Configurations
             builder.Property("Title").HasMaxLength(100).IsRequired();
             builder.Property("ISBN").HasMaxLength(13).IsRequired();
             builder.Property("Price").HasPrecision(5, 2);
+            builder.HasIndex(["Id", "IsDeleted"]);
         }
     }
 }

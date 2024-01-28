@@ -58,12 +58,12 @@ namespace BookManagementClassLibrary.Repositories
 
         public TEntity Get(TEntity entity)
         {
-            return DbSet!.FirstOrDefault(e => e.Email==entity.Email);
+            return DbSet!.FirstOrDefault(e => e.Email==entity.Email && e.IsDeleted==false);
         }
 
         public List<TEntity> GetAll(TEntity entity)
         {
-            return DbSet!.Where(e => e.Email == entity.Email).ToList();   
+            return DbSet!.Where(e => e.Email == entity.Email && e.IsDeleted == false).ToList();   
         }
     }
 

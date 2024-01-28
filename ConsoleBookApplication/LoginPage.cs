@@ -1,6 +1,7 @@
 ﻿using BookManagementClassLibrary;
 using BookManagementClassLibrary.DbContexts;
 using BookManagementClassLibrary.Domains;
+using BookManagementClassLibrary.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace ConsoleBookApplication
@@ -27,7 +28,7 @@ namespace ConsoleBookApplication
                     Login(new BookDbContext().Set<User>());
                     break;
                 case 2:
-                    SignUp(new LibraryRepository<User>(new BookDbContext()));
+                    SignUp(new UserRepository<User>(new BookDbContext()));
                     break;
                 case 3:
                     Environment.Exit(0);
@@ -50,7 +51,7 @@ namespace ConsoleBookApplication
             string password = Console.ReadLine() ?? string.Empty;
 
             //getting the info if the user enters correct credentials
-            var userInfo = user.SingleOrDefault(u => u.Email == email && u.Password == password);
+            var userInfo = user.SingleOrDefault(u => u.Email == email && u.Password == password && u.IsDeleted == false);
 
             if (userInfo != null)
             {
@@ -66,7 +67,7 @@ namespace ConsoleBookApplication
         /// Sign up for new users
         /// </summary>
         /// <param name="user"></param>
-        static void SignUp(LibraryRepository<User> user)
+        static void SignUp(UserRepository<User> user)
         {
             Console.Clear();
             Console.Write("Enter your first name: ");
@@ -89,7 +90,7 @@ namespace ConsoleBookApplication
             user.Add(newUser);
 
             Console.WriteLine("Account created successfully!");
-            Menu.DisplayMenu(newUser);
+            Menu.DisplayMenu(user.Get(newUser));
         }
     }
 }

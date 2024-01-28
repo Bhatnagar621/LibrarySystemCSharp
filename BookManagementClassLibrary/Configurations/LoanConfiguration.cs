@@ -10,6 +10,7 @@ namespace BookManagementClassLibrary.Configurations
         {
             builder.HasOne(l => l.User).WithOne(u => u.Loan).HasForeignKey<Loan>(l => l.UserId);
             builder.HasOne(l => l.Book).WithMany(b => b.Loans).HasForeignKey(l => l.BookId);
+            builder.HasIndex(["Id", "IsDeleted"]);
         }
     }
 }

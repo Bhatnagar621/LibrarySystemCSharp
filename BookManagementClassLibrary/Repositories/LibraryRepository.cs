@@ -57,12 +57,12 @@ namespace BookManagementClassLibrary
 
         public TEntity Get(TEntity entity)
         {
-            return DbSet!.Find(entity.Id);
+            return DbSet!.FirstOrDefault(e => e.Id == entity.Id && e.IsDeleted == false);
         }
 
         public List<TEntity> GetAll(TEntity entity)
         {
-            return DbSet!.Where(e => e.Id == entity.Id).ToList();
+            return DbSet!.Where(e => e.Id == entity.Id && e.IsDeleted == false).ToList();
         }
     }
 }

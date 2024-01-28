@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleBookApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25baf043511b46e052fd841c7aad04b4955f2636")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d96078f800a872f02ad7043360f38837209c8556")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleBookApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleBookApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
